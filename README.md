@@ -27,9 +27,9 @@ This method allows you to edit and run ***LittleOS*** directly.
 
 1. Clone the repository
 
-> git clone https://github.com/Byte-ByByte/LittleOS.git
+`git clone https://github.com/Byte-ByByte/LittleOS.git`
 
-2. Open *Visual Studio Code* and install the [Microsoft Makecode Asset Explorer(https://marketplace.visualstudio.com/items?itemName=ms-edu.pxt-vscode-web) extension
+2. Open *Visual Studio Code* and install the [Microsoft Makecode Asset Explorer](https://marketplace.visualstudio.com/items?itemName=ms-edu.pxt-vscode-web) extension
 
 #### Running LittleOS
 
