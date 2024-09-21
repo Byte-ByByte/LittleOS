@@ -1,0 +1,51 @@
+{
+    "name": "littleOS lEXEi Test Decoder Version",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "animation": "*",
+        "sprite-scaling": "*",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.3",
+        "pxt-button-combos": "github:jwunderl/pxt-button-combos#v0.0.24",
+        "radio-broadcast": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "main.py"
+    ],
+    "targetVersions": {
+        "branch": "v2.0.3",
+        "tag": "v2.0.3",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/98facd192193fcc80a4fb6588e4c8ad8d7ab13f8",
+        "target": "2.0.3",
+        "pxt": "10.0.18"
+    },
+    "preferredEditor": "tsprj",
+    "palette": [
+        "#000000",
+        "#FFFFFF",
+        "#FF2121",
+        "#FF93C4",
+        "#FF8135",
+        "#FFF609",
+        "#249CA3",
+        "#78DC52",
+        "#003FAD",
+        "#87F2FF",
+        "#8E2EC4",
+        "#A4839F",
+        "#5C406c",
+        "#E5CDC4",
+        "#91463d",
+        "#000000"
+    ]
+}
