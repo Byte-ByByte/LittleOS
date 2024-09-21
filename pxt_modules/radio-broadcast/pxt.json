@@ -1,0 +1,16 @@
+{
+    "name": "radio-broadcast",
+    "description": "Adds new blocks for message communication in the radio category",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "radio-broadcast.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.53",
+        "pxt": "8.5.63"
+    },
+    "icon": "./static/libs/radio-broadcast.png"
+}

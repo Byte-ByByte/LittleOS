@@ -1,0 +1,22 @@
+{
+    "name": "sprite-scaling",
+    "description": "Additional scaling blocks for sprites",
+    "dependencies": {
+        "game": "*"
+    },
+    "files": [
+        "README.md",
+        "scaling.ts",
+        "targetoverrides.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "1.12.53",
+        "pxt": "8.5.63"
+    },
+    "weight": 80,
+    "icon": "./static/libs/sprite-scaling.png"
+}

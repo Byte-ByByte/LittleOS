@@ -1,0 +1,20 @@
+{
+    "name": "pxt-button-combos",
+    "version": "0.0.24",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "README.md",
+        "combos.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj"
+}

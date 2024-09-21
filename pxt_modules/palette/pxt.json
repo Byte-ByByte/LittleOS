@@ -1,0 +1,23 @@
+{
+    "name": "palette",
+    "description": "Palette manipulations",
+    "dependencies": {
+        "color": "*",
+        "game": "*"
+    },
+    "files": [
+        "palette.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "1.12.53",
+        "pxt": "8.5.63"
+    },
+    "searchOnly": true,
+    "weight": 75,
+    "icon": "./static/libs/palette.png"
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Color Fading",
+    "version": "0.2.3",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "palette": "*"
+    },
+    "files": [
+        "README.md",
+        "color.ts",
+        "fade.ts",
+        "palettes.ts",
+        "effect.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "targetVersions": {
+        "target": "1.8.22",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj"
+}
