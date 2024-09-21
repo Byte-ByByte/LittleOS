@@ -47,7 +47,7 @@ To edit ***LittleOS*** or any *Microsoft Makecode Arcade* program:
 2. Select `Explorer` from the side menu.
 3. Open `main.ts` or `main.py` to edit the code.
 
-> To build and run ***LittleOS*** or any *Microsoft Makecode Arcade* program, follow the instructions in the (Running LittleOS)[https://github.com/Byte-ByByte/LittleOS/blob/main/README.md#running-littleos] section.
+> To build and run ***LittleOS*** or any *Microsoft Makecode Arcade* program, follow the instructions in the [Running LittleOS](https://github.com/Byte-ByByte/LittleOS/blob/main/README.md#running-littleos) section.
 
 ### Method 2 - Running a main build
 
