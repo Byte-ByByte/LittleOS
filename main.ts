@@ -120,12 +120,8 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         sprites.destroy(StartupLogo)
         StartIcon = sprites.create(assets.image`StartIcon`, SpriteKind.SysIcon)
         PowerButton = sprites.create(assets.image`poweroptionsbtn`, SpriteKind.SysIcon)
-        RecycleBin = sprites.create(assets.image`SysRecycleBin`, SpriteKind.SysIcon)
-        RecycleBinText = textsprite.create("Bin", 6, 1)
         StartIcon.setPosition(9, 112)
         PowerButton.setPosition(150, 112)
-        RecycleBin.setPosition(9, 9)
-        RecycleBinText.setPosition(12, 22)
         SysCursor = sprites.create(assets.image`Cursor`, SpriteKind.$Cursor)
         controller.moveSprite(SysCursor, 100, 100)
         SysCursor.setStayInScreen(true)
@@ -683,8 +679,6 @@ let screenshotimage = ""
 let StartupIcon: Sprite = null
 let Startup = false
 let SysCursor: Sprite = null
-let RecycleBinText: TextSprite = null
-let RecycleBin: Sprite = null
 let PowerButton: Sprite = null
 let StartIcon: Sprite = null
 let ConsoleText: TextSprite = null
@@ -743,12 +737,8 @@ if (BootManagerOpen) {
     sprites.destroy(StartupLogo)
     StartIcon = sprites.create(assets.image`StartIcon`, SpriteKind.SysIcon)
     PowerButton = sprites.create(assets.image`poweroptionsbtn`, SpriteKind.SysIcon)
-    RecycleBin = sprites.create(assets.image`SysRecycleBin`, SpriteKind.SysIcon)
-    RecycleBinText = textsprite.create("Bin", 6, 1)
     StartIcon.setPosition(9, 112)
     PowerButton.setPosition(150, 112)
-    RecycleBin.setPosition(9, 9)
-    RecycleBinText.setPosition(12, 22)
     SysCursor = sprites.create(assets.image`Cursor`, SpriteKind.$Cursor)
     controller.moveSprite(SysCursor, 100, 100)
     SysCursor.setStayInScreen(true)
