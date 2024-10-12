@@ -321,32 +321,36 @@ controller.combos.attachCombo("aba+b", function () {
     ScreenShotWindow = sprites.create(assets.image`ScreenShotWindow`, SpriteKind.SysIcon)
     ScreenShotWindow.setPosition(33, 17)
 })
-function DecodeSFAT (property: string, file: string) {
-    fileContent = blockSettings.readString(file)
-    tempProperty = ""
-    index22 = 0
-    Sound = ""
-    IsPad = false
-    while (true) {
-        if (file.charAt(index22) == "e") {
-            if (IsPad) {
-                pause(parseFloat(Sound))
-            } else {
-                Sound = "" + Sound + "e"
-                PlayEncodedSound(Sound)
+function DecodeSFAT(property: string, file: string) {
+    let fileContent = blockSettings.readString(file);
+    let tempProperty = "";
+    let value = "";
+    let readProperty = false;
+
+    for (let i = 0; i < fileContent.length; i++) {
+        if (fileContent.substr(i, 4) === "--::") {
+            i += 4;
+
+            while (fileContent.charAt(i) !== ";" && i < fileContent.length) {
+                if (fileContent.charAt(i) !== " ") {
+                    if (!readProperty) {
+                        tempProperty += fileContent.charAt(i);
+                    } else {
+                        value += fileContent.charAt(i);
+                    }
+                } else if (tempProperty === property) {
+                    return value;
+                }
+                i++;
             }
-            Sound = ""
-            IsPad = false
-        } else if (file.charAt(index22) == "f") {
-            break;
-        } else if (file.charAt(index22) == "p") {
-            IsPad = true
-        } else {
-            Sound = "" + Sound + file.charAt(index22)
+
+            tempProperty = "";
+            value = "";
+            readProperty = false;
         }
-        index22 += 1
     }
-    return
+
+    return null;
 }
 controller.combos.attachCombo("ababababa+b", function () {
     RFReadToNF(":sender:John Doe;:nmping:;")
@@ -598,6 +602,7 @@ function PlayEncodedSong(CSVSS: string) {
     }
 }
 
+let curPropS = ""
 let UACWindow: Sprite = null
 let pixel: Sprite = null
 let heady = 0
